@@ -1,9 +1,9 @@
 #include "Mathematics.h"
 
-MathUtilities::MathUtilities()
+Mathematics::Mathematics()
 {}
 
-double MathUtilities::calculateDegreeInRadians(double degree) const
+double Mathematics::calculateDegreeInRadians(double degree) const
 {
 	double pi = 3.14;
 	double radian = 0.0;
@@ -12,7 +12,7 @@ double MathUtilities::calculateDegreeInRadians(double degree) const
 	return radian = degree * (pi / 180.0);
 }
 
-double MathUtilities::calculateCartesianDistance(double x1, double y1, double x2, double y2) const
+double Mathematics::calculateCartesianDistance(double x1, double y1, double x2, double y2) const
 {
     double result = 0.0;
 
@@ -20,7 +20,7 @@ double MathUtilities::calculateCartesianDistance(double x1, double y1, double x2
     return result = std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
 }
 
-double MathUtilities::calculateHarvesineDistance(double lat1, double lon1, double lat2, double lon2) const
+double Mathematics::calculateHarvesineDistance(double lat1, double lon1, double lat2, double lon2) const
 {
     const double EARTH_RADIUS_KM = 6378;
 
@@ -38,21 +38,21 @@ double MathUtilities::calculateHarvesineDistance(double lat1, double lon1, doubl
     return EARTH_RADIUS_KM * d;
 }
 
-double MathUtilities::calculateSine(double degree) const
+double Mathematics::calculateSine(double degree) const
 {
     double result = 0.0;
 
     return result = std::sin(calculateDegreeInRadians(degree));
 }
 
-double MathUtilities::calculateCosine(double angle) const
+double Mathematics::calculateCosine(double angle) const
 {
     double result = 0.0;
 
     return result = std::cos(angle);
 }
 
-double MathUtilities::calcualteParabola(double a, double b, double c, double x) const
+double Mathematics::calcualteParabola(double a, double b, double c, double x) const
 {
     double result = 0.0;
 
@@ -60,7 +60,7 @@ double MathUtilities::calcualteParabola(double a, double b, double c, double x) 
     return result = (a * std::pow(x, 2)) + (b * x) + c;
 }
 
-bool MathUtilities::isPointOnHyperbola(double x, double y, double h, double k, double a, double b) const
+bool Mathematics::isPointOnHyperbola(double x, double y, double h, double k, double a, double b) const
 {
     double result = 0.0;
     const double EPSILON = 1e-9;
