@@ -9,6 +9,7 @@ class Mathematics
 
 public :
 	Mathematics();
+	double calculateTangent(double degree) const;
 	double calculateCartesianDistance(double x1, double y1, double x2, double y2) const;
 	double calculateHarvesineDistance(double lat1, double lon1, double lat2, double lon2) const;
 	double calculateSine(double degree) const;

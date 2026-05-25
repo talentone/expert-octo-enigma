@@ -5,11 +5,18 @@ Mathematics::Mathematics()
 
 double Mathematics::calculateDegreeInRadians(double degree) const
 {
-	double pi = 3.14;
+	double pi = 3.14159265358979323846;
 	double radian = 0.0;
 
 	// Formulae : degree * (pi / 180)
 	return radian = degree * (pi / 180.0);
+}
+
+double Mathematics::calculateTangent(double degree) const
+{
+    double result = 0.0;
+
+    return result = std::tan(calculateDegreeInRadians(degree));
 }
 
 double Mathematics::calculateCartesianDistance(double x1, double y1, double x2, double y2) const
