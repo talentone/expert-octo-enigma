@@ -19,6 +19,20 @@ double Mathematics::calculateTangent(double degree) const
     return result = std::tan(calculateDegreeInRadians(degree));
 }
 
+double Mathematics::calculateInverseTangent(double a) const
+{
+    double result = 0.0;
+
+    return result = std::atan(a);
+}
+
+double Mathematics::calculateHyperbolicTangent(double a) const
+{ 
+    double result = 0.0;
+
+    return result = std::tanh(a);
+}
+
 double Mathematics::calculateCartesianDistance(double x1, double y1, double x2, double y2) const
 {
     double result = 0.0;
