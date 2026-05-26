@@ -1,2 +1,2 @@
 # expert-octo-enigma
-Physics Engine for Educational Purpose
+Game Engine for Educational Purpose
