@@ -14,6 +14,7 @@ public :
 		double x, y, z;
 	};
 
+	Vector calculateCrossProduct(Vector a, Vector b) const;
 	double calculateAngleBetweenVectors(Vector a, Vector b) const;
 	double calculateDotProduct(Vector a, Vector b) const;
 	double calculateGeometricMagnitude(Vector v) const;

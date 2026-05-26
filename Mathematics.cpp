@@ -12,6 +12,12 @@ double Mathematics::calculateDegreeInRadians(double degree) const
 	return radian = degree * (pi / 180.0);
 }
 
+Mathematics::Vector Mathematics::calculateCrossProduct(Vector a, Vector b) const
+{
+    // Calculates perpendicular vector to two existing vectors
+    return {a.y*b.z - a.z*b.y, a.z*b.x - a.x*b.z, a.x*b.y - a.y*b.x};
+}
+
 double Mathematics::calculateAngleBetweenVectors(Vector a, Vector b) const
 {
     double radians = 0.0;
