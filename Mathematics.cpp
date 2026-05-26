@@ -12,6 +12,34 @@ double Mathematics::calculateDegreeInRadians(double degree) const
 	return radian = degree * (pi / 180.0);
 }
 
+double Mathematics::calculateAngleBetweenVectors(Vector a, Vector b) const
+{
+    double radians = 0.0;
+    double degree = 0.0;
+
+    // Calculates angle between vectors
+    radians = (a.x * b.x + a.y * b.y + a.z * b.z) / (calculateGeometricMagnitude(a) * calculateGeometricMagnitude(b));
+    radians = std::fmax(-1.0, std::fmin(1.0, radians));
+    return degree = std::acos(radians);
+
+    return a.x * b.x + a.y * b.y + a.z * b.z;
+}
+
+double Mathematics::calculateDotProduct(Vector a, Vector b) const
+{
+    double result = 0.0;
+
+    return result = a.x * b.x + a.y * b.y + a.z * b.z;
+}
+
+double Mathematics::calculateGeometricMagnitude(Vector v) const
+{
+    double length = 0.0;
+
+    // Calculates length of a vector
+    return length = std::sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
+}
+
 double Mathematics::calculateTangent(double degree) const
 {
     double result = 0.0;

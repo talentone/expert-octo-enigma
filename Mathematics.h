@@ -9,6 +9,14 @@ class Mathematics
 
 public :
 	Mathematics();
+	
+	struct Vector { 
+		double x, y, z;
+	};
+
+	double calculateAngleBetweenVectors(Vector a, Vector b) const;
+	double calculateDotProduct(Vector a, Vector b) const;
+	double calculateGeometricMagnitude(Vector v) const;
 	double calculateTangent(double degree) const;
 	double calculateInverseTangent(double a) const;
 	double calculateHyperbolicTangent(double a) const;
@@ -21,6 +29,7 @@ public :
 
 private:
 	double calculateDegreeInRadians(double degree) const;
+
 };
 
 #endif // !MATHEMATICS_H
