@@ -21,8 +21,6 @@ double Mathematics::calculateAngleBetweenVectors(Vector a, Vector b) const
     radians = (a.x * b.x + a.y * b.y + a.z * b.z) / (calculateGeometricMagnitude(a) * calculateGeometricMagnitude(b));
     radians = std::fmax(-1.0, std::fmin(1.0, radians));
     return degree = std::acos(radians);
-
-    return a.x * b.x + a.y * b.y + a.z * b.z;
 }
 
 double Mathematics::calculateDotProduct(Vector a, Vector b) const
